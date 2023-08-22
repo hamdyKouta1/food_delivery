@@ -74,7 +74,8 @@ class OrderDetailsScreen extends StatelessWidget {
                                     ),
                                   ],
                                 ),
-                                SizedBox(
+                                GetBuilder<OrderDetailsController>(
+                                  builder:(controller) => SizedBox(
                                   width: Get.width,
                                   height: Get.height - 430.h,
                                   child: oController
@@ -184,7 +185,7 @@ class OrderDetailsScreen extends StatelessWidget {
                                             );
                                           },
                                         ),
-                                ),
+                                ),),
                                 SizedBox(
                                   height: 1.h,
                                 ),
